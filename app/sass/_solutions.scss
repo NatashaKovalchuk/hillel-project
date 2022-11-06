@@ -1,0 +1,50 @@
+.solutions {
+    padding-top: 129px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 159px;
+    }
+
+    &__link {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn-path {
+        transition-duration: 300ms;
+    }
+
+    &__link:hover &__btn-path {
+        stroke: $accent;
+    }
+}
+
+@media (min-width:768px) {
+    .solutions {
+        padding-top: 269px;
+
+        &__title {
+            padding-bottom: 417px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .solutions {
+        padding-top: 261px;
+        
+        &__title {
+            padding-bottom: 305px;
+        }
+    }
+}

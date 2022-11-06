@@ -1,0 +1,138 @@
+.achievments {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $bg;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        padding-bottom: 30px;
+    }
+
+    &__wrap {
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 12px;
+        
+    }
+
+    &__item-1 {
+        width: 100%;
+        height: 90px;
+        background: url("../img/achieve-img-1.png") no-repeat center center;
+        background-size: 53px 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+
+    &__item-2,
+    &__item-3,
+    &__item-4 {
+        display: none;
+    }
+
+    &__buttons-list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid $separator;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        background-color: $active;
+        opacity: 0.2;
+        margin-right: 7px;
+        margin-left: 7px;
+        transition-duration: 300ms;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__button-active {
+        opacity: 1;
+    }
+
+}
+
+@media (min-width:768px) {
+    .achievments__parent {
+        display: flex;
+        margin: 0 -20px;
+        
+    }
+    .achievments__item-2 {
+        height: 90px;
+        background: url("../img/achieve-img-2.png") no-repeat center center;
+        background-size: 106px 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .achievments__item-3 {
+        height: 90px;
+        background: url("../img/achieve-img-3.png") no-repeat center center;
+        background-size: 130px 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .achievments__item-4 {
+        height: 90px;
+        background: url("../img/achieve-img-4.png") no-repeat center center;
+        background-size: 111px 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .achievments__button-hidden {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    .achievments__item-1 {
+        height: 110px;
+        background: url("../img/achieve-img-1-lg.png") no-repeat center center;
+        background-size: 80px 60px;
+        background-color: #ffffff;
+    }
+
+    .achievments__item-2 {
+        height: 110px;
+        background: url("../img/achieve-img-2-lg.png") no-repeat center center;
+        background-size: 159px 60px;
+        background-color: #ffffff;
+    }
+
+    .achievments__item-3 {
+        height: 110px;
+        background: url("../img/achieve-img-3-lg.png") no-repeat center center;
+        background-size: 195px 60px;
+        background-color: #ffffff;
+    }
+
+    .achievments__item-4 {
+        height: 110px;
+        background: url("../img/achieve-img-4-lg.png") no-repeat center center;
+        background-size: 166px 60px;
+        background-color: #ffffff;
+    }
+}

@@ -1,0 +1,109 @@
+.services {
+    padding-bottom: 0px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 30px;
+    }
+
+    &__article {
+        width: 100%;
+        padding-bottom: 30px;
+
+        &-icon-1 {
+            background: url("../img/services-icon-1.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+        
+        &-icon-2 {
+            background: url("../img/services-icon-2.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+        
+        &-icon-3 {
+            background: url("../img/services-icon-3.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+        
+        &-icon-4 {
+            background: url("../img/services-icon-4.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+        
+        &-icon-5 {
+            background: url("../img/services-icon-5.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+        
+        &-icon-6 {
+            background: url("../img/services-icon-6.svg") no-repeat left top;
+            background-size: 92px 92px;
+            width: 92px;
+            height: 92px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: $active;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .services__title {
+        padding-bottom: 60px;
+    }
+
+    .services__articles-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    .services__article {
+            width: 50%;
+            height: auto;
+            padding-right: 60px;
+            padding-bottom: 60px;
+
+            &__article:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services__article {
+        width: 33.333%;
+
+         &:nth-child(3n+3) {
+            padding-right: 0;
+        }
+    }
+}
+

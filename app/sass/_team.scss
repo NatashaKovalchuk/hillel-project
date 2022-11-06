@@ -1,0 +1,107 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrap {
+        background-color: $bg;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__photo {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__desc {
+        padding: 30px;
+        background-color: $bg;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $red-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text;
+        padding-bottom: 6px;
+    }
+
+    &__position {
+        font-size: 14px;
+        line-height: 22px;
+        color: $text;
+    }
+
+    &__buttons-list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        background-color: $active;
+        opacity: 0.2;
+        margin-right: 7px;
+        margin-left: 7px;
+        transition-duration: 300ms;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__button-active {
+        opacity: 1;
+    }
+}
+
+@media (min-width:768px) {
+    .team__text {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width:992px) {
+    .team__wrap {
+        display: flex;
+        border-radius: 12px;
+    }
+
+    .team__photo {
+        width: 400px; 
+        height: auto;
+        object-fit: none;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .team__desc {
+        border-top-right-radius: 12px;
+    }
+}

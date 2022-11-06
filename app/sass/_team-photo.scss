@@ -1,0 +1,47 @@
+.team-photo {
+    background-image: url("../img/team-img-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 114px;
+}
+
+@media (min-width:768px) {
+    .team-photo {
+        height: 234px;
+    }
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5ppx) {
+        .team-photo {
+            background-image: url("../img/team-img-1@2x.jpg");
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .team-photo {
+        background-image: url("../img/team-img-2.jpg");
+        height: 311px;
+    }
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5ppx) {
+        .team-photo {
+            background-image: url("../img/team-img-2@2x.jpg");
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    .team-photo {
+        background-image: url("../img/team-img-3.jpg");
+        height: 438px;
+    }
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5ppx) {
+        .team-photo {
+            background-image: url("../img/team-img-3@2x.jpg");
+       }
+    }
+}
+

@@ -1,0 +1,27 @@
+.section-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition-duration: 300ms;
+    
+    &::after {
+        content: url("../img/arrow.svg");
+        width: 12px;
+        height: 13px;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+    

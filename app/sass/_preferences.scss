@@ -1,0 +1,112 @@
+.preferences {
+    padding-top: 30px;
+    padding-bottom: 34px;
+
+    &__wrap {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    &__nav {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+    &__btn {
+        white-space: nowrap;
+        background-color: transparent;
+        border: none;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $text;
+
+        &-active {
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;;
+        }
+    }
+
+    &__desc {
+        width: 100%;
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+
+        &-title {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+
+        &-text {
+            font-size: 19px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .preferences__wrap {
+        width: 768px;
+    }
+
+    .preferences__btn {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .preferences__desc-title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    
+}
+
+@media (min-width:992px) {
+    .preferences {
+        display: flex;
+
+        &__wrap {
+            width: 50%;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            
+        }
+
+        &__nav {
+            padding-right: 60px;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        &__btn {
+            padding-bottom: 30px;
+        }
+
+        &__desc {
+            width: 50%;
+            border-top: none;
+            padding-left: 60px;
+
+            &-title {
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+

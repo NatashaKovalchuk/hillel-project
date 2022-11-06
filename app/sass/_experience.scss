@@ -1,0 +1,126 @@
+.experience {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__desc-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 28px;
+    }
+
+    &__desc-text {
+        font-size: 19px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__achieve {
+        padding-top: 10px;
+        padding-left: 30px;
+        border-left: 4px solid $separator;
+
+        &-item {
+            padding-bottom: 40px;
+        }
+
+        &-item:last-child {
+            padding-bottom: 0;
+        }
+
+        &-ammount {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding-bottom: 10px;
+        }
+
+        &-ammount-1,
+        &-ammount-2,
+        &-ammount-3 {
+            display: flex;
+        }
+
+        &-ammount-1::before {
+            content: url(../img/experience-icon-1.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            margin-top: 4px;
+            
+        }
+
+        &-ammount-2::before {
+            content: url(../img/experience-icon-2.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            margin-top: 1px;
+        }
+
+        &-ammount-3::before {
+            content: url(../img/experience-icon-3.svg);
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            margin-top: 3px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 20px;
+            color: #323264;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .experience {
+        padding-bottom: 60px;
+
+        &__desc-title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .experience {
+        display: flex;
+        justify-content: center;
+       
+        &__desc {
+            width: 486px;
+            margin-right: 30px;
+        }
+
+        &__achieve {
+            padding-top: 0;
+            width: 388px;
+            height: 332px;
+
+            &-text {
+                width: 354px;
+            }
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    .experience__desc {
+        width: 662px;
+    }
+
+    .experience__achieve {
+        width: 354px;
+    }
+}
